@@ -32,10 +32,18 @@
             */
 
             // Gyakorló 1 9. feladat Tömeg átváltás.
+            /*
             double pounds;
             Console.Write("Enter a number in pounds: ");
             pounds = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"{pounds} pounds is {pounds * 0.454} kilograms");
+            */
+
+            // Gyakorló 1 10. feladat Adott ASCII kódhoz tartozó karakter megjelenítése.
+            int number;
+            Console.Write("Enter an ASCII code: ");
+            number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"The character for ASCII code {number} is {Convert.ToChar(number)}");
         }
 
         static double celsiusToFahrenheit(double celsius)
