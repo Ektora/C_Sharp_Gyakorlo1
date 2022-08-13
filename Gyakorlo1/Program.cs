@@ -13,6 +13,7 @@
             */
 
             // Gyakorló 1 7. feladat Henger térfogatának számítása
+            /*
             double radius, length;
             Console.Write("Enter the radius and length of a cylinder: ");
             radius = Convert.ToDouble(Console.ReadLine());
@@ -20,6 +21,21 @@
             length = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"The area is {area(radius)}");
             Console.WriteLine($"The volume is {volume(radius,length)}");
+            */
+
+            // Gyakorló 1 8. feladat Hosszúság átváltás.
+            /*
+            double feet;
+            Console.Write("Enter a value for feet: ");
+            feet = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"{feet} feet is {feet*0.305} meters");
+            */
+
+            // Gyakorló 1 9. feladat Tömeg átváltás.
+            double pounds;
+            Console.Write("Enter a number in pounds: ");
+            pounds = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"{pounds} pounds is {pounds * 0.454} kilograms");
         }
 
         static double celsiusToFahrenheit(double celsius)
