@@ -66,6 +66,7 @@
             */
 
             // Gyakorló 1 27. feladat ISBN kód ellenőrzése
+            /*
             string szoveg = Console.ReadLine();
             int c, ISBNOsszeg=0;
             for(int i = 0; i<9; i++)
@@ -83,7 +84,22 @@
             {
                 Console.WriteLine(szoveg + 'X');
             }
+            */
 
+            // Gyakorló 1 28. feladat Háromszög érvényességének ellenőrzése
+            double a, b, c;
+            Console.Write("Enter three edges: ");
+            a = Convert.ToDouble(Console.ReadLine());
+            b = Convert.ToDouble(Console.ReadLine());
+            c = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine($"Can edges {a}, {b}, and {c} form a triangle? {haromszogErvenyesseg(a,b,c)}");
+        }
+
+        static bool haromszogErvenyesseg(double a, double b, double c)
+        {
+            if (((a + b) > c) && ((a + c) > b) && ((b + c) > a))
+                return true;
+            return false;
         }
 
         static void masodfokuEgyenlet(double a, double b, double c)
