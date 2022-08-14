@@ -58,11 +58,31 @@
             */
 
             // Gyakorló 1 26. feladat Páros szám ellenőrzése
+            /*
             int number;
             Console.Write("Enter an integer: ");
             number = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Is {number} an even number? {number%2 == 0}");
-            
+            */
+
+            // Gyakorló 1 27. feladat ISBN kód ellenőrzése
+            string szoveg = Console.ReadLine();
+            int c, ISBNOsszeg=0;
+            for(int i = 0; i<9; i++)
+            {
+                c = Convert.ToInt32(szoveg[i]-'0');
+                Console.WriteLine(c);
+                ISBNOsszeg += c * (i + 1); 
+            }
+            ISBNOsszeg = ISBNOsszeg % 11;
+            if (ISBNOsszeg != 10)
+            {
+                Console.WriteLine(szoveg + ISBNOsszeg);
+            }
+            else
+            {
+                Console.WriteLine(szoveg + 'X');
+            }
 
         }
 
