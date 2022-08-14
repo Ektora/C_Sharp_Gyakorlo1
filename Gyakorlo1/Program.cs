@@ -48,13 +48,21 @@
             */
 
             // Gyakorló 1 25. feladat Algebra: a másodfokú egyenlet megoldása.
+            /*
             double a,b,c;
             Console.Write("Enter a, b, c: ");
             a = Convert.ToDouble(Console.ReadLine());
             b = Convert.ToDouble(Console.ReadLine());
             c = Convert.ToDouble(Console.ReadLine());
             masodfokuEgyenlet(a,b,c);
+            */
 
+            // Gyakorló 1 26. feladat Páros szám ellenőrzése
+            int number;
+            Console.Write("Enter an integer: ");
+            number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Is {number} an even number? {number%2 == 0}");
+            
 
         }
 
