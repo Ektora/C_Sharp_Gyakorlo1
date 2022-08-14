@@ -40,10 +40,43 @@
             */
 
             // Gyakorló 1 10. feladat Adott ASCII kódhoz tartozó karakter megjelenítése.
+            /*
             int number;
             Console.Write("Enter an ASCII code: ");
             number = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"The character for ASCII code {number} is {Convert.ToChar(number)}");
+            */
+
+            // Gyakorló 1 25. feladat Algebra: a másodfokú egyenlet megoldása.
+            double a,b,c;
+            Console.Write("Enter a, b, c: ");
+            a = Convert.ToDouble(Console.ReadLine());
+            b = Convert.ToDouble(Console.ReadLine());
+            c = Convert.ToDouble(Console.ReadLine());
+            masodfokuEgyenlet(a,b,c);
+
+
+        }
+
+        static void masodfokuEgyenlet(double a, double b, double c)
+        {
+            double r1, r2;
+            if (Math.Pow(b, 2) - 4 * a * c > 0)
+            {
+                r1 = (-b + Math.Sqrt(Math.Pow(b, 2) - 4 * a * c)) / (2 * a);
+                r2 = (-b - Math.Sqrt(Math.Pow(b, 2) - 4 * a * c)) / (2 * a);
+                Console.WriteLine($"The roots are {r1} and {r2}");
+
+            }
+            else if (Math.Pow(b, 2) - 4 * a * c == 0)
+            {
+                r1 = (-b + Math.Sqrt(Math.Pow(b, 2) - 4 * a * c)) / (2 * a);
+                Console.WriteLine($"The root is {r1}");
+            }
+            else
+            {
+                Console.WriteLine("The equation has no real roots");
+            }
         }
 
         static double celsiusToFahrenheit(double celsius)
