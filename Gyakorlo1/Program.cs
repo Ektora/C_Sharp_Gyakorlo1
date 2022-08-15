@@ -122,10 +122,34 @@
             */
 
             // Gyakorló 1 30. feladat Kilogram átváltása fontra.
+            /*
             Console.WriteLine(String.Format("{0,-14} {1,-10}", "Kilograms", "Pounds"));
             for(int i = 1; i < 200; i = i + 2)
             {
                 Console.WriteLine(String.Format("{0,-13} {1,5:0.0}",i,i*2.2));
+            }
+            */
+
+            // Gyakorló 1 31. feladat Pi értékének kiszámítása
+            double sum =0;
+            bool plusz = true;
+            for(int i = 1; i <=100000; i=i+2)
+            {
+                
+                if (plusz)
+                {
+                    sum += (1.0 / i);
+                    plusz = !plusz;
+                }
+                else
+                {
+                    sum -= (1.0 / i);
+                    plusz = !plusz;
+                }
+                
+                if((i-1) % 10000 ==0 && i!=1) { 
+                    Console.WriteLine(4*sum);
+                }
             }
         }
 
