@@ -87,13 +87,40 @@
             */
 
             // Gyakorló 1 28. feladat Háromszög érvényességének ellenőrzése
+            /*
             double a, b, c;
             Console.Write("Enter three edges: ");
             a = Convert.ToDouble(Console.ReadLine());
             b = Convert.ToDouble(Console.ReadLine());
             c = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"Can edges {a}, {b}, and {c} form a triangle? {haromszogErvenyesseg(a,b,c)}");
+            */
+
+            // Gyakorló 1 29. feladat Pozitív és negatív számok számolása, valamint számok átlagának a kiszámítása.
+            int poz =0, neg = 0, ossz = 0, olvasottSzam;
+            double average = 0;
+            Console.WriteLine("Enter integer values, the program exist if the input is 0:");
+            do
+            {
+                olvasottSzam = Convert.ToInt32(Console.ReadLine());
+                ossz++;
+                average += olvasottSzam;
+                if (olvasottSzam > 0)
+                    poz++;
+                else if(olvasottSzam<0)
+                {
+                    neg++;
+                }
+            }
+            while (olvasottSzam != 0);
+
+            Console.WriteLine("The number of positives is " + poz);
+            Console.WriteLine("The number of negatives is " + neg);
+            Console.WriteLine("The total is " + ossz);
+            Console.WriteLine("The average is " + average/(ossz-1));
         }
+
+
 
         static bool haromszogErvenyesseg(double a, double b, double c)
         {
