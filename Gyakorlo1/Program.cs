@@ -97,6 +97,7 @@
             */
 
             // Gyakorló 1 29. feladat Pozitív és negatív számok számolása, valamint számok átlagának a kiszámítása.
+            /*
             int poz =0, neg = 0, ossz = 0, olvasottSzam;
             double average = 0;
             Console.WriteLine("Enter integer values, the program exist if the input is 0:");
@@ -118,6 +119,14 @@
             Console.WriteLine("The number of negatives is " + neg);
             Console.WriteLine("The total is " + ossz);
             Console.WriteLine("The average is " + average/(ossz-1));
+            */
+
+            // Gyakorló 1 30. feladat Kilogram átváltása fontra.
+            Console.WriteLine(String.Format("{0,-14} {1,-10}", "Kilograms", "Pounds"));
+            for(int i = 1; i < 200; i = i + 2)
+            {
+                Console.WriteLine(String.Format("{0,-13} {1,5:0.0}",i,i*2.2));
+            }
         }
 
 
