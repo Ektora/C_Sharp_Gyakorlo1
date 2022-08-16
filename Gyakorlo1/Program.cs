@@ -131,6 +131,7 @@
             */
 
             // Gyakorló 1 31. feladat Pi értékének kiszámítása
+            /*
             double sum =0;
             bool plusz = true;
             for(int i = 1; i <=100000; i=i+2)
@@ -151,9 +152,30 @@
                     Console.WriteLine(4*sum);
                 }
             }
+            */
+
+            // Gyakorló 1 32. feladat Havi kamat kiszámítása
+            double berakottOsszeg;
+            int kamatlab, futamido;
+
+            Console.WriteLine("Kérem a betenni kivánt összeget: ");
+            berakottOsszeg = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Kérem a kamatlábat: ");
+            kamatlab = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Kérem a futamidőt: ");
+            futamido = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("A kamatozott összeg: " + KamatEredmeny(berakottOsszeg,kamatlab,futamido));
         }
 
-
+        static double KamatEredmeny(double berakottOsszeg, int kamatlab, int futamido)
+        {
+            double osszeg = 0.0;
+            for(int i = 0; i < futamido; i++)
+            {
+                osszeg = (berakottOsszeg + osszeg) * (1 + (kamatlab / 100.0) / 12);
+            }
+            return osszeg;
+        }
 
         static bool haromszogErvenyesseg(double a, double b, double c)
         {
