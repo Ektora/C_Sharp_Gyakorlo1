@@ -155,6 +155,7 @@
             */
 
             // Gyakorló 1 32. feladat Havi kamat kiszámítása
+            /*
             double berakottOsszeg;
             int kamatlab, futamido;
 
@@ -165,6 +166,25 @@
             Console.WriteLine("Kérem a futamidőt: ");
             futamido = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("A kamatozott összeg: " + KamatEredmeny(berakottOsszeg,kamatlab,futamido));
+            */
+
+            // Gyakorló 1 33. feladat Tökételes számok
+            int oszto = 0;
+            for(int i=2; i <= 10000; i++)
+            {
+                for(int j = 1; j < i; j++)
+                {
+                    if(i%j == 0)
+                    {
+                        oszto += j;
+                    }
+                }
+                if(i == oszto)
+                {
+                    Console.WriteLine("Egy tökéletes szám a " + oszto);
+                }
+                oszto = 0;
+            }
         }
 
         static double KamatEredmeny(double berakottOsszeg, int kamatlab, int futamido)
