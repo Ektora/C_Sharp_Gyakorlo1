@@ -169,6 +169,7 @@
             */
 
             // Gyakorló 1 33. feladat Tökételes számok
+            /*
             int oszto = 0;
             for(int i=2; i <= 10000; i++)
             {
@@ -185,6 +186,15 @@
                 }
                 oszto = 0;
             }
+            */
+
+            // Gyakorló 1 34. feladat Összegzés
+            double osszeg = 0.0;
+            for(int i = 1; i < 625; i++)
+            {
+                osszeg += (1 / (Math.Sqrt(i)+Math.Sqrt(i+1)));
+            }
+            Console.WriteLine(osszeg);
         }
 
         static double KamatEredmeny(double berakottOsszeg, int kamatlab, int futamido)
